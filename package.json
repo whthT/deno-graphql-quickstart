@@ -1,7 +1,7 @@
 {
   "name": "deno-graphql-quickstart",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.ts",
   "license": "MIT",
   "scripts": {
     "dev": "denon run --allow-net --allow-env --allow-read --allow-write --allow-plugin --unstable server.ts",
