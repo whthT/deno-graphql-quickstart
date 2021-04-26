@@ -1,0 +1,13 @@
+{
+  "name": "deno-graphql-quickstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "denon run --allow-net --allow-env --allow-read --allow-write --allow-plugin --unstable server.ts",
+    "dev:inspect": "denon run --allow-net --allow-env --allow-read --allow-write --allow-plugin --inspect=127.0.0.1:9229 --unstable server.ts",
+    "test": "deno test --allow-all --unstable ./tests",
+    "seed": "deno run --unstable --allow-all ./commands/seed.ts",
+    "seed:fresh": "yarn seed --fresh"
+  }
+}

@@ -1,0 +1,4 @@
+enum UserActivityType {
+    LOGIN,
+    REGISTER
+}

@@ -1,0 +1,36 @@
+type User {
+  _id: String!
+  firstname: String!
+  lastname: String!
+  email: String!
+  dateCreated: String!
+  dateUpdated: String!
+  dateLastLogin: String!
+
+  activities: [UserActivity!]!
+}
+
+input User_RegisterInput {
+  firstname: String!
+  lastname: String!
+  email: String!
+  password: String!
+}
+
+input User_LoginInput {
+  email: String!
+  password: String!
+}
+type User_LoginRegisterPayload {
+  token: String!
+  user: User!
+}
+
+extend type Mutation {
+  register(input: User_RegisterInput!): User_LoginRegisterPayload!
+  login(input: User_LoginInput!): User_LoginRegisterPayload!
+}
+
+extend type Query {
+  userMe: User! 
+}

@@ -1,0 +1,10 @@
+type UserActivity {
+  _id: String!
+  ip: String!
+  type: UserActivityType!  
+  dateCreated: String!
+  dateUpdated: String!
+  
+  user: User!
+
+}
